@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mr. HKT - By ᴴᴷ〆Ƭꫝϻɪϻ</title>
+    <meta name="description" content="Official website of Mr. HKT. Connect with @mrhktteam for the latest gaming updates.">
+    <meta name="keywords" content="Mr. HKT, mrhkt, Mr HKT, Free Fire UID 12264436181">
+    <meta name="author" content="Mr. HKT">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght=600;800;900&family=Poppins:wght=400;600;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+        body {
+            background: #020306;
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* ==========================================================================
+           🌈 ULTRA-BRIGHT LIQUID ENGINE
+           ========================================================================== */
+        .liquid-bg-container {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+            background: #020306;
+        }
+
+        .liquid-canvas {
+            width: 100%; height: 100%;
+            filter: blur(50px);
+            position: relative;
+            opacity: 0.95;
+        }
+
+        .color-blob {
+            position: absolute;
+            mix-blend-mode: screen;
+            border-radius: 50%;
+        }
+
+        .blob-1 {
+            top: 10%; left: 10%; width: 50vw; height: 50vw;
+            background: radial-gradient(circle, rgba(255, 0, 76, 0.95) 0%, rgba(0,0,0,0) 70%);
+            animation: moveBlobOne 18s infinite alternate ease-in-out;
+        }
+
+        .blob-2 {
+            bottom: 5%; right: 5%; width: 55vw; height: 55vw;
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.95) 0%, rgba(0,0,0,0) 70%);
+            animation: moveBlobTwo 22s infinite alternate ease-in-out;
+        }
+
+        .blob-3 {
+            top: 30%; left: 40%; width: 45vw; height: 45vw;
+            background: radial-gradient(circle, rgba(157, 0, 255, 0.9) 0%, rgba(0,0,0,0) 70%);
+            animation: moveBlobThree 15s infinite alternate ease-in-out;
+        }
+
+        .blob-4 {
+            bottom: 15%; left: -5%; width: 42vw; height: 42vw;
+            background: radial-gradient(circle, rgba(255, 102, 0, 0.9) 0%, rgba(0,0,0,0) 70%);
+            animation: moveBlobFour 19s infinite alternate ease-in-out;
+        }
+
+        .blob-5 {
+            top: -10%; right: 20%; width: 40vw; height: 40vw;
+            background: radial-gradient(circle, rgba(0, 255, 102, 0.85) 0%, rgba(0,0,0,0) 70%);
+            animation: moveBlobFive 17s infinite alternate ease-in-out;
+        }
+
+        .blob-6 {
+            bottom: 40%; right: 15%; width: 44vw; height: 44vw;
+            background: radial-gradient(circle, rgba(255, 0, 157, 0.85) 0%, rgba(0,0,0,0) 70%);
+            animation: moveBlobSix 24s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveBlobOne {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(15vw, 20vh) scale(1.2); }
+            100% { transform: translate(-10vw, 10vh) scale(0.9); }
+        }
+        @keyframes moveBlobTwo {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-20vw, -20vh) scale(1.25); }
+            100% { transform: translate(10vw, -10vh) scale(0.85); }
+        }
+        @keyframes moveBlobThree {
+            0% { transform: translate(0, 0) scale(0.9); }
+            50% { transform: translate(-15vw, 15vh) scale(1.3); }
+            100% { transform: translate(15vw, -15vh) scale(1px); }
+        }
+        @keyframes moveBlobFour {
+            0% { transform: translate(0, 0) scale(1.1); }
+            50% { transform: translate(20vw, -10vh) scale(0.85); }
+            100% { transform: translate(-10vw, 15vh) scale(1.15); }
+        }
+        @keyframes moveBlobFive {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-15vw, 25vh) scale(1.2); }
+            100% { transform: translate(10vw, -15vh) scale(0.9); }
+        }
+        @keyframes moveBlobSix {
+            0% { transform: translate(0, 0) scale(0.95); }
+            50% { transform: translate(25vw, -20vh) scale(1.15); }
+            100% { transform: translate(-15vw, 15vh) scale(1); }
+        }
+
+        /* ==========================================================================
+           ⚡ Free Fire Core Premium Loader (UPDATED: NEON LASER LINE & IMMERSIVE QUOTES)
+           ========================================================================== */
+        #main-loader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #020306;
+            z-index: 99999;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            transition: opacity 0.4s ease, visibility 0.4s;
+        }
+        .ff-loader-logo {
+            width: 90px; height: 90px; background: linear-gradient(135deg, #ff004c, #f59e0b);
+            border-radius: 24px; display: flex; align-items: center; justify-content: center;
+            font-size: 40px; color: #fff; box-shadow: 0 0 40px rgba(255, 0, 76, 0.4);
+            transform: rotate(45deg); animation: gentlePulse 2s infinite ease-in-out;
+            margin-bottom: 50px;
+        }
+        .ff-loader-logo i { transform: rotate(-45deg); }
+        
+        @keyframes gentlePulse {
+            0%, 100% { transform: rotate(45deg) scale(0.96); box-shadow: 0 0 30px rgba(255, 0, 76, 0.3); }
+            50% { transform: rotate(45deg) scale(1.04); box-shadow: 0 0 50px rgba(0, 242, 254, 0.6); }
+        }
+
+        .ff-loading-box { width: 290px; text-align: center; }
+        
+        .ff-status-text { 
+            font-family: 'Orbitron', sans-serif; 
+            font-size: 11px; font-weight: 900; 
+            letter-spacing: 1.5px; color: #f59e0b; 
+            margin-bottom: 12px; display: flex; justify-content: space-between; 
+            text-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+            transition: color 0.3s ease;
+        }
+        
+        /* Neon Laser Line Style Bar */
+        .ff-bar-bg { 
+            width: 100%; height: 3px; 
+            background: rgba(255, 255, 255, 0.03); 
+            border-radius: 10px; 
+            overflow: hidden;
+            position: relative;
+        }
+        .ff-bar-fill { 
+            width: 0%; height: 100%; 
+            background: linear-gradient(90deg, #ff004c, #00f2fe); 
+            border-radius: 10px; 
+            box-shadow: 0 0 15px #00f2fe, 0 0 5px #ff004c; 
+        }
+
+        /* ==========================================================================
+           🌟 CUSTOM ICON ANIMATIONS ENGINE
+           ========================================================================== */
+        @keyframes custom-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        @keyframes custom-shake {
+            0%, 100% { transform: rotate(0deg); }
+            20%, 60% { transform: rotate(-10deg); }
+            40%, 80% { transform: rotate(10deg); }
+        }
+        @keyframes custom-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes custom-flip {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        /* Applying continuous animations */
+        .fa-bolt { animation: custom-pulse 1.5s infinite ease-in-out; }
+        .fa-facebook-f, .fa-facebook { animation: custom-shake 2s infinite ease-in-out; }
+        .fa-youtube { animation: custom-pulse 1.8s infinite ease-in-out; }
+        .fa-tiktok { animation: custom-bounce 2s infinite ease-in-out; }
+        .fa-instagram { animation: custom-flip 3s infinite linear; }
+        .fa-envelope, .fa-envelope-open-text, .fa-paper-plane { animation: custom-bounce 2.2s infinite ease-in-out; }
+        .fa-crosshairs, .fa-shield-halved { animation: fa-spin 4s infinite linear; }
+        .fa-video { animation: custom-pulse 2s infinite ease-in-out; }
+        .fa-compass { animation: fa-spin 6s infinite linear; }
+        .fa-chevron-right { animation: custom-shake 1.5s infinite ease-in-out; }
+
+        /* ==========================================================================
+           📱 ১. মোবাইল ভিউ
+           ========================================================================== */
+        @media (max-width: 768px) {
+            .desktop-layout { display: none !important; }
+            
+            .mobile-layout {
+                width: 100%; height: 100vh;
+                overflow-y: scroll;
+                scroll-snap-type: y mandatory;
+                scroll-behavior: smooth;
+                position: relative; z-index: 10;
+            }
+
+            .mob-section {
+                width: 100%; height: 100vh;
+                scroll-snap-align: start;
+                display: flex; align-items: center; justify-content: center;
+                padding: 20px; position: relative;
+            }
+
+            .mob-card {
+                width: 100%; max-width: 370px;
+                background: rgba(10, 15, 30, 0.35);
+                backdrop-filter: blur(25px) saturate(220%); -webkit-backdrop-filter: blur(25px) saturate(220%);
+                border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 36px;
+                padding: 45px 24px; text-align: center;
+                transform: translateY(50px) scale(0.9); opacity: 0;
+                transition: all 0.6s cubic-bezier(0.34, 1.4, 0.64, 1);
+                box-shadow: 0 40px 80px rgba(0,0,0,0.6), inset 0 1px 1px rgba(255,255,255,0.2);
+            }
+
+            .mob-section.active .mob-card { transform: translateY(0) scale(1); opacity: 1; }
+
+            .profile-avatar-glow {
+                width: 85px; height: 85px; background: linear-gradient(135deg, #00f2fe, #ff004c);
+                border-radius: 24px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;
+                box-shadow: 0 15px 35px rgba(0, 242, 254, 0.4);
+            }
+            .profile-avatar-glow i { font-size: 34px; color: #fff; }
+
+            .status-tag {
+                display: inline-flex; align-items: center; gap: 8px;
+                background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.15);
+                padding: 7px 20px; border-radius: 50px; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px;
+            }
+            .pulse-dot-light { width: 8px; height: 8px; background: #00f2fe; border-radius: 50%; position: relative; }
+            .pulse-dot-light::after { content: ''; position: absolute; width: 100%; height: 100%; background: #00f2fe; border-radius: 50%; animation: pulse 2s infinite; }
+            @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(2.8); opacity: 0; } }
+
+            .m-icon {
+                width: 80px; height: 80px; margin: 0 auto 22px;
+                display: flex; align-items: center; justify-content: center;
+                border-radius: 22px; font-size: 38px; color: #fff; box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            }
+            .m-fb .m-icon { background: linear-gradient(135deg, #1877f2, #0044cc); }
+            .m-yt .m-icon { background: linear-gradient(135deg, #ff0000, #990000); }
+            .m-tk .m-icon { background: linear-gradient(135deg, #00, #00f2fe); }
+            .m-ig .m-icon { background: linear-gradient(135deg, #f857a6, #ff5858); }
+            .m-em .m-icon { background: linear-gradient(135deg, #ea4335, #991b1b); }
+            .m-ff .m-icon { background: linear-gradient(135deg, #f59e0b, #b45309); }
+            .m-vid .m-icon { background: linear-gradient(135deg, #9d0025, #6d0019); }
+
+            .scroll-hint {
+                position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
+                font-size: 10px; color: rgba(255,255,255,0.4); letter-spacing: 2px;
+                text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: 6px; font-family: 'Orbitron', sans-serif;
+            }
+            .scroll-hint i { animation: bounce 1.6s infinite ease-in-out; color: #00f2fe; }
+            @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+        }
+
+        /* ==========================================================================
+           🖥️ ২. ডেস্কটপ ভিউ
+           ========================================================================== */
+        @media (min-width: 769px) {
+            .mobile-layout { display: none !important; }
+            body { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+
+            .desktop-layout {
+                display: flex; width: 1020px; height: 640px; max-height: 90vh;
+                background: rgba(10, 16, 32, 0.35);
+                backdrop-filter: blur(30px) saturate(200%); -webkit-backdrop-filter: blur(30px) saturate(200%);
+                border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 32px;
+                overflow: hidden; box-shadow: 0 60px 120px rgba(0,0,0,0.7), inset 0 1px 1px rgba(255,255,255,0.15);
+                position: relative; z-index: 10;
+            }
+
+            .sidebar {
+                width: 32%; background: rgba(5, 8, 18, 0.4);
+                border-right: 1px solid rgba(255, 255, 255, 0.08);
+                padding: 45px 22px; display: flex; flex-direction: column; align-items: center;
+                overflow-y: auto;
+            }
+
+            .brand-logo {
+                width: 75px; height: 75px; background: linear-gradient(135deg, #ff004c, #00f2fe);
+                border-radius: 22px; display: flex; align-items: center; justify-content: center;
+                font-size: 32px; margin-bottom: 20px; box-shadow: 0 12px 30px rgba(255,0,76,0.3);
+            }
+
+            .sidebar h1 { font-family: 'Orbitron', sans-serif; font-size: 24px; font-weight: 900; letter-spacing: 1.5px; margin-bottom: 35px; text-transform: uppercase; background: linear-gradient(90deg, #ff004c, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+            .menu-list { width: 100%; display: flex; flex-direction: column; gap: 8px; }
+            
+            .menu-item {
+                width: 100%; padding: 14px 20px; background: transparent; border: none;
+                border-radius: 16px; color: rgba(255,255,255,0.6); font-size: 14px; font-weight: 600;
+                text-align: left; cursor: pointer; display: flex; align-items: center; gap: 14px;
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); border: 1px solid transparent;
+            }
+            .menu-item i { font-size: 16px; width: 22px; opacity: 0.7; }
+            .menu-item:hover { color: #fff; background: rgba(255,255,255,0.06); }
+            .menu-item.active { color: #fff; background: rgba(255, 0, 76, 0.15); border: 1px solid rgba(255, 0, 76, 0.4); box-shadow: 0 8px 20px rgba(255, 0, 76, 0.15); }
+
+            .content-display { 
+                width: 68%; height: 100%; position: relative; 
+                overflow-y: auto; overflow-x: hidden; padding: 40px;
+            }
+            
+            .content-display::-webkit-scrollbar, .sidebar::-webkit-scrollbar { width: 6px; }
+            .content-display::-webkit-scrollbar-track, .sidebar::-webkit-scrollbar-track { background: transparent; }
+            .content-display::-webkit-scrollbar-thumb, .sidebar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+            .content-display::-webkit-scrollbar-thumb:hover, .sidebar::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
+
+            .d-tab-panel {
+                display: none; flex-direction: column; align-items: center; justify-content: center;
+                min-height: 100%; width: 100%; text-align: center; opacity: 0; transform: scale(0.96);
+                transition: opacity 0.4s ease, transform 0.4s ease;
+            }
+            .d-tab-panel.active { display: flex; opacity: 1; transform: scale(1); }
+            .d-icon { font-size: 65px; margin-bottom: 20px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); }
+        }
+
+        /* ==========================================================================
+           💎 ৩. অ্যাকশন বাটন ও গ্লোবাল ডিজাইন
+           ========================================================================== */
+        h2 { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        p { color: rgba(255,255,255,0.65); font-size: 14px; line-height: 1.6; margin-bottom: 30px; }
+
+        .btn-action {
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            width: 100%; max-width: 320px; padding: 16px; border-radius: 18px; color: #fff; text-decoration: none;
+            font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;
+            cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin: 0 auto;
+        }
+
+        .m-fb .btn-action, .d-tab-panel [style*="#1877f2"] ~ .btn-action { background: linear-gradient(135deg, #1877f2, #0044cc); border-color: #1877f2; box-shadow: 0 12px 25px rgba(24,119,242,0.4); }
+        .m-yt .btn-action, .d-tab-panel [style*="#ff0000"] ~ .btn-action { background: linear-gradient(135deg, #ff0000, #990000); border-color: #ff0000; box-shadow: 0 12px 25px rgba(255,0,0,0.4); }
+        .m-tk .btn-action, .d-tab-panel [style*="#00f2fe"] ~ .btn-action { background: linear-gradient(135deg, #00f2fe, #0033ff); border-color: #00f2fe; color: #000; font-weight: 900; box-shadow: 0 12px 25px rgba(0,242,254,0.4); }
+        .m-ig .btn-action, .d-tab-panel [style*="#e1306c"] ~ .btn-action { background: linear-gradient(135deg, #f857a6, #ff5858); border-color: #e1306c; box-shadow: 0 12px 25px rgba(225,48,108,0.4); }
+        .m-em .btn-action, .d-tab-panel [style*="#ea4335"] ~ .btn-action { background: linear-gradient(135deg, #ea4335, #991b1b); border-color: #ea4335; box-shadow: 0 12px 25px rgba(234,67,53,0.4); }
+        .m-ff .btn-action, .d-tab-panel [style*="#f59e0b"] ~ .btn-action { background: linear-gradient(135deg, #f59e0b, #b45309); border-color: #f59e0b; color: #000; font-weight: 900; box-shadow: 0 12px 25px rgba(245,158,11,0.4); }
+        .m-intro .btn-action { background: linear-gradient(135deg, #ff004c, #9d0025); border-color: #ff004c; }
+
+        .btn-action:hover { transform: translateY(-4px) scale(1.02); filter: brightness(1.2); }
+        .btn-action:active { transform: translateY(-1px) scale(0.99); }
+
+        .video-box-frame {
+            width: 100%; max-width: 500px; padding-bottom: 56.25%; height: 0;
+            border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.15);
+            position: relative; background: #000; box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            margin: 0 auto;
+        }
+        .video-box-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+        .uid-layout { text-align: center; display: flex; flex-direction: column; width: 100%; align-items: center; }
+        .uid-sub { font-size: 9px; opacity: 0.8; margin-top: 2px; letter-spacing: 1px; }
+
+        #game-toast {
+            position: fixed; top: -80px; left: 50%; transform: translateX(-50%);
+            background: rgba(10, 15, 30, 0.8); border: 1px solid #00f2fe; padding: 15px 35px;
+            border-radius: 20px; box-shadow: 0 30px 60px rgba(0,242,254,0.3);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            color: #fff; font-size: 13px; font-weight: 700; z-index: 100000;
+            display: flex; align-items: center; gap: 12px; letter-spacing: 1px;
+            transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-family: 'Orbitron', sans-serif;
+        }
+        #game-toast.show { top: 30px; }
+        #game-toast i { color: #00f2fe; animation: custom-pulse 1s infinite alternate; }
+    </style>
+</head>
+<body>
+
+<div class="liquid-bg-container">
+    <div class="liquid-canvas">
+        <div class="color-blob blob-1"></div>
+        <div class="color-blob blob-2"></div>
+        <div class="color-blob blob-3"></div>
+        <div class="color-blob blob-4"></div>
+        <div class="color-blob blob-5"></div>
+        <div class="color-blob blob-6"></div>
+    </div>
+</div>
+
+<div id="main-loader">
+    <div class="ff-loader-logo"><i class="fas fa-bolt"></i></div>
+    <div class="ff-loading-box">
+        <div class="ff-status-text"><span id="load-status">BOOYAH MODE ACTIVATING...</span><span id="load-percentage">0%</span></div>
+        <div class="ff-bar-bg"><div class="ff-bar-fill" id="load-bar"></div></div>
+    </div>
+</div>
+
+<div class="mobile-layout" id="mob-scroller">
+    
+    <section class="mob-section m-intro active">
+        <div class="mob-card">
+            <div class="profile-avatar-glow"><i class="fas fa-bolt"></i></div>
+            <h2 style="background: linear-gradient(90deg, #ff004c, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mr. HKT</h2>
+            <p>Welcome to the official hub. Swipe down to discover active networks, streams, and player stats.</p>
+            <div class="status-tag"><span class="pulse-dot-light"></span> Gaming Creator</div>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-fb">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fab fa-facebook-f"></i></div>
+            <h2>FACEBOOK</h2>
+            <p>Connect with the official Mr. HKT community, get regular post announcements, and interact with the team.</p>
+            <a href="https://www.facebook.com/share/17etQoazRw/" class="btn-action" target="_blank">FOLLOW PAGE <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-yt">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fab fa-youtube"></i></div>
+            <h2>YOUTUBE</h2>
+            <p>Watch official gameplay montages, live stream highlights, and exclusive pro tips from Mr. HKT.</p>
+            <a href="https://youtube.com/@mr-hkt?si=5o1ozZ3WF_xQBi-O" class="btn-action" target="_blank">Subscribe Channel <i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-tk">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fab fa-tiktok"></i></div>
+            <h2>TIKTOK</h2>
+            <p>Catch the trendiest short gaming clips, funny bugs, and epic clutch moments within 60 seconds.</p>
+            <a href="https://www.tiktok.com/@mrhkt1?_r=1&_t=ZS-96wvCAl1rTI" class="btn-action" target="_blank">Follow TikTok <i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-ig">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fab fa-instagram"></i></div>
+            <h2>INSTAGRAM</h2>
+            <p>Get a glimpse of behind-the-scenes actions, setup tours, and daily personal updates from the creator.</p>
+            <a href="https://www.instagram.com/mr._hkt?igsh=YXdranJocHJuN2l2" class="btn-action" target="_blank">FOLLOW INSTAGRAM <i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-em">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fas fa-envelope"></i></div>
+            <h2>EMAIL</h2>
+            <p>For official business inquiries, sponsorship opportunities, or urgent collaborations, feel free to drop a mail.</p>
+            <a href="mailto:bdkinghkt@gmail.com" class="btn-action">Send Message <i class="fas fa-paper-plane"></i></a>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-ff">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fas fa-crosshairs"></i></div>
+            <h2>FREE FIRE UID</h2>
+            <p>Copy the official player UID to send friend requests, in-game gifts, or challenge for custom lobby matches.</p>
+            <button class="btn-action" onclick="copyUIDData()">
+                <div class="uid-layout">
+                    <span>UID: 12264436181</span>
+                    <span class="uid-sub">TAP TO COPY DATA</span>
+                </div>
+            </button>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Swipe Up</div>
+    </section>
+
+    <section class="mob-section m-vid">
+        <div class="mob-card">
+            <div class="m-icon"><i class="fas fa-video"></i></div>
+            <h2>LATEST VIDEO</h2>
+            <p style="margin-bottom: 20px;">Stream or watch the latest trending feed uploaded on the channel directly below.</p>
+            <div class="video-box-frame">
+                <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUsIPIFHqF79BX9Wuck9YUng&modestbranding=1&rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="desktop-layout">
+    <div class="sidebar">
+        <div class="brand-logo"><i class="fas fa-bolt"></i></div>
+        <h1>Mr. HKT</h1>
+        <div class="menu-list">
+            <button class="menu-item active" onclick="switchDesktopTab(0)"><i class="fas fa-compass"></i> Identity Hub</button>
+            <button class="menu-item" onclick="switchDesktopTab(1)"><i class="fab fa-facebook-f"></i> Facebook</button>
+            <button class="menu-item" onclick="switchDesktopTab(2)"><i class="fab fa-youtube"></i> YouTube</button>
+            <button class="menu-item" onclick="switchDesktopTab(3)"><i class="fab fa-tiktok"></i> TikTok</button>
+            <button class="menu-item" onclick="switchDesktopTab(4)"><i class="fab fa-instagram"></i> Instagram</button>
+            <button class="menu-item" onclick="switchDesktopTab(5)"><i class="fas fa-envelope"></i> Email</button>
+            <button class="menu-item" onclick="switchDesktopTab(6)"><i class="fas fa-crosshairs"></i> PLAYER ID</button>
+            <button class="menu-item" onclick="switchDesktopTab(7)"><i class="fas fa-video"></i> LATEST VIDEO</button>
+        </div>
+    </div>
+
+    <div class="content-display" id="desktop-content-area">
+        <div class="d-tab-panel active">
+            <div class="d-icon" style="color: #fff;"><i class="fas fa-compass"></i></div>
+            <h2 style="background: linear-gradient(90deg, #ff004c, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">OFFICIAL IDENTITY</h2>
+            <p>Welcome to the main station of Mr. HKT. Click on any panel navigation from the sidebar to inspect credentials and verified platform coordinates.</p>
+            <div class="btn-action" style="max-width:240px; padding: 14px 40px; border-radius: 30px; background: linear-gradient(135deg, #ff004c, #00f2fe); font-weight: 800; border: none; color: #fff;">THANKS FOR VISIT</div>
+        </div>
+        <div class="d-tab-panel">
+            <div class="d-icon" style="color: #1877f2;"><i class="fab fa-facebook"></i></div>
+            <h2>FACEBOOK</h2>
+            <p>Connect with the official Mr. HKT community, get regular post announcements, and interact with the team.</p>
+            <a href="https://www.facebook.com/share/17etQoazRw/" class="btn-action" target="_blank">FOLLOW PAGE</a>
+        </div>
+        <div class="d-tab-panel">
+            <div class="d-icon" style="color: #ff0000;"><i class="fab fa-youtube"></i></div>
+            <h2>YOUTUBE</h2>
+            <p>Watch official gameplay montages, live stream highlights, and exclusive pro tips from Mr. HKT.</p>
+            <a href="https://youtube.com/@mr-hkt?si=5o1ozZ3WF_xQBi-O" class="btn-action" target="_blank">Subscribe Channel</a>
+        </div>
+        <div class="d-tab-panel">
+            <div class="d-icon" style="color: #00f2fe;"><i class="fab fa-tiktok"></i></div>
+            <h2>TIKTOK</h2>
+            <p>Catch the trendiest short gaming clips, funny bugs, and epic clutch moments within 60 seconds.</p>
+            <a href="https://www.tiktok.com/@mrhkt1?_r=1&_t=ZS-96wvCAl1rTI" class="btn-action" target="_blank">Follow TikTok</a>
+        </div>
+        <div class="d-tab-panel">
+            <div class="d-icon" style="color: #e1306c;"><i class="fab fa-instagram"></i></div>
+            <h2>INSTAGRAM</h2>
+            <p>Get a glimpse of behind-the-scenes actions, setup tours, and daily personal updates from the creator.</p>
+            <a href="https://www.instagram.com/mr._hkt?igsh=OTh0YnZ2MGk0ZGtu" class="btn-action" target="_blank">FOLLOW INSTAGRAM</a>
+        </div>
+        <div class="d-tab-panel">
+            <div class="d-icon" style="color: #ea4335;"><i class="fas fa-envelope-open-text"></i></div>
+            <h2>EMAIL INQUIRY</h2>
+            <p>For official business inquiries, sponsorship opportunities, or urgent collaborations, feel free to drop a mail.</p>
+            <a href="mailto:bdkinghkt@gmail.com" class="btn-action">Send Message</a>
+        </div>
+        <div class="d-tab-panel">
+            <div class="d-icon" style="color: #f59e0b;"><i class="fas fa-shield-halved"></i></div>
+            <h2>FREE FIRE UID</h2>
+            <p>Copy the official player UID to send friend requests, in-game gifts, or challenge for custom lobby matches.</p>
+            <button class="btn-action" onclick="copyUIDData()">
+                <div class="uid-layout">
+                    <span>UID: 12264436181</span>
+                    <span class="uid-sub">CLICK TO COPY DATA</span>
+                </div>
+            </button>
+        </div>
+        <div class="d-tab-panel" style="width: 100%;">
+            <div class="d-icon" style="color: #9d0025;"><i class="fas fa-video"></i></div>
+            <h2 style="font-size: 22px; margin-bottom: 15px;"> LATEST VIDEO</h2>
+            <p>Stream or watch the latest trending feed uploaded on the channel directly below.</p>
+            <div class="video-box-frame">
+                <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUsIPIFHqF79BX9Wuck9YUng&modestbranding=1&rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="game-toast"><i class="fas fa-check-circle"></i> UID DATA COPIED SUCCESSFUL!</div>
+
+<script>
+    // ⚙️ Core Sync Loader with Immersive Gaming Quotes & Balanced Speed
+    window.addEventListener('DOMContentLoaded', () => {
+        const barFill = document.getElementById('load-bar');
+        const percentText = document.getElementById('load-percentage');
+        const statusText = document.getElementById('load-status');
+        const loaderScreen = document.getElementById('main-loader');
+        
+        let count = 0;
+        const interval = setInterval(() => {
+            // স্পিড অপ্টিমাইজেশন: প্রতি পদক্ষেপে ১ থেকে ৩ পর্যন্ত বাড়বে, ফলে টেক্সট পড়ার পর্যাপ্ত সময় পাওয়া যাবে
+            count += Math.floor(Math.random() * 3) + 1; 
+            if(count > 100) count = 100;
+            
+            barFill.style.width = count + '%';
+            percentText.innerText = count + '%';
+            
+            // পার্সেন্টেজ অনুযায়ী ডাইনামিক গেমিং কোটস চেঞ্জ
+            if (count <= 30) {
+                statusText.innerText = "BOOYAH MODE ACTIVATING...";
+                statusText.style.color = "#ff004c";
+            } else if (count <= 60) {
+                statusText.innerText = "GATHERING SQUAD PACK...";
+                statusText.style.color = "#00f2fe";
+            } else if (count <= 90) {
+                statusText.innerText = "LOADING ONE-TAP SETTINGS...";
+                statusText.style.color = "#f59e0b";
+            } else {
+                statusText.innerText = "WELCOME TO THE HUB!";
+                statusText.style.color = "#00ff66";
+            }
+            
+            if(count === 100) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    loaderScreen.style.opacity = '0';
+                    loaderScreen.style.visibility = 'hidden';
+                }, 600); // ১০০% হওয়ার পর হালকা একটু পজ নিয়ে স্মুথলি ভ্যানিশ হবে
+            }
+        }, 50); // ইন্টারভাল টাইম ৫০ করা হয়েছে যাতে খুব বেশি ফাস্ট না লাগে
+    });
+
+    // 📱 Mobile Section Scroll System
+    const mobScroller = document.getElementById('mob-scroller');
+    const mobSections = document.querySelectorAll('.mob-section');
+
+    mobScroller.addEventListener('scroll', () => {
+        let current = '';
+        mobSections.forEach(section => {
+            const top = section.offsetTop;
+            if (mobScroller.scrollTop >= (top - section.clientHeight / 2.5)) { current = section; }
+        });
+        mobSections.forEach(sec => sec.classList.remove('active'));
+        if (current) current.classList.add('active');
+    });
+
+    // 🖥️ Desktop Tab System
+    function switchDesktopTab(index) {
+        const menuItems = document.querySelectorAll('.menu-item');
+        const tabPanels = document.querySelectorAll('.d-tab-panel');
+        const contentArea = document.getElementById('desktop-content-area');
+        
+        menuItems.forEach(item => item.classList.remove('active'));
+        tabPanels.forEach(panel => panel.classList.remove('active'));
+        
+        menuItems[index].classList.add('active');
+        tabPanels[index].classList.add('active');
+        
+        contentArea.scrollTop = 0;
+    }
+
+    // 📋 Clipboard API
+    function copyUIDData() {
+        navigator.clipboard.writeText("12264436181");
+        const toast = document.getElementById('game-toast');
+        toast.classList.add('show');
+        setTimeout(() => { toast.classList.remove('show'); }, 2000);
+    }
+</script>
+
+</body>
+</html>
